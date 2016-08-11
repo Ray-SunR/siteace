@@ -1,0 +1,8 @@
+<template name="single_website">
+	<div class="container">
+	{{> website_item}}
+	{{#if currentUser}}
+	{{> comment_input}}
+	{{/if}}
+	</div>
+</template>

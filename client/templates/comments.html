@@ -1,0 +1,25 @@
+
+<template name="comments">
+<div class="panel panel-info" id="comments" >
+ <div class="panel-heading">
+    <h3 class="panel-title">Comments</h3>
+ </div>
+<ul class="list-group">
+{{#each comments}}
+<li class="list-group-item">
+	<div class="row comments">
+		<div class="col-xs-3">
+			<p>Username: {{user_name}}</p>
+			<p>Posted on: {{posted_on}}</p>
+		</div>
+		<div class="col-xs-9">
+			<p>
+			{{user_comment}}
+			</p>
+		</div>
+	</div>
+</li>
+{{/each}}
+</ul>
+</div>
+</template>
